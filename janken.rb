@@ -77,8 +77,9 @@ class Player
       # 変数「janken」にJankenをインスタンス化したものを代入します。
       janken = Janken.new
       # 変数「next_game」に「true」を代入しましょう。
+      next_game = true
       # 「next_game」が「false」だと繰り返し処理を終了し、「true」だと繰り返し処理を継続します。
-      while next_game = true
+      while next_game == true
         # 変数「next_game」にじゃんけんを実行して返ってきた値(戻り値)を代入します。
         #「janken.pon(player.hand, enemy.hand)」でじゃんけんを実行しています。
         next_game = janken.pon(player.hand, enemy.hand)
